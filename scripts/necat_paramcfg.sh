@@ -5,7 +5,7 @@
 
 #Constants
 USAGE="USAGE: necat_paramcfg.sh -n PROJECT_NAME -r ONT_READ_LIST -s GENOME_SIZE -t THREADS -c NAME_OF_CONFIG_FILE"
-CONFIG_FILENAME_PREFIX="filled_"
+NEW_CONFIG_FILENAME="filled_config.txt"
 
 #Read in command line arguments.
 NUMBER_OF_ARGUMENTS=0
@@ -36,7 +36,6 @@ if [ ! -f $CONFIG_FILENAME ]; then
 fi 
 
 #Set name for new config file and check if file with this name already exists.
-NEW_CONFIG_FILENAME="${CONFIG_FILENAME_PREFIX}${CONFIG_FILENAME}"
 if [ -f $NEW_CONFIG_FILENAME ]; then
     echo "A file named ${NEW_CONFIG_FILENAME} already exists in the current working directory."
     exit 3
