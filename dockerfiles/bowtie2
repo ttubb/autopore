@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM python:3.7-slim
 
 ARG BOWTIE2_VERSION=2.3.5.1
 
@@ -6,7 +6,7 @@ RUN apt-get update \
  && apt-get install -y wget \
                        unzip \
 		       libsys-hostname-long-perl
-
+		       
 WORKDIR /software
 
 #Install Bowtie2
