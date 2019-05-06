@@ -4,7 +4,8 @@ ARG BOWTIE2_VERSION=2.3.5.1
 
 RUN apt-get update \
  && apt-get install -y wget \
-                       unzip
+                       unzip \
+		       libsys-hostname-long-perl
 
 WORKDIR /software
 
