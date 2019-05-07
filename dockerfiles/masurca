@@ -16,5 +16,7 @@ RUN tar -xf *.tar.gz \
 WORKDIR /software/masurca
 RUN chmod +x install.sh
 RUN ./install.sh
+RUN chmod +x bin/masurca
+ENV PATH="/software/masurca/bin:${PATH}"
 
 RUN apt-get clean
