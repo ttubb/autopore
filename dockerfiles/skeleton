@@ -1,7 +1,6 @@
 #Base images
 
 #Constants
-ARG MINIMAP2_VERSION=2.16
 
 #Setup
  
