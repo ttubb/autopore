@@ -19,7 +19,7 @@ WORKDIR /software
 RUN git clone --recursive https://github.com/isovic/racon.git racon
 WORKDIR /software/racon
 RUN git checkout ${RACON_VERSION}
-WORKDIR /racon/racon/build
+WORKDIR /software/racon/build
 RUN cmake -DCMAKE_BUILD_TYPE=RELEASE ..
 RUN make
 ENV PATH="/software/racon/build/bin:${PATH}"
