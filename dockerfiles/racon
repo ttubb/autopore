@@ -22,7 +22,7 @@ RUN git checkout ${RACON_VERSION}
 WORKDIR /racon/racon/build
 RUN cmake -DCMAKE_BUILD_TYPE=RELEASE ..
 RUN make
-ENV PATH="/racon/racon/build/bin:${PATH}"
+ENV PATH="/software/racon/build/bin:${PATH}"
 
 #Cleanup
 RUN apt-get clean
