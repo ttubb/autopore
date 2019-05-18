@@ -15,7 +15,7 @@ WORKDIR /software
 
 #Install porechop
 RUN git clone https://github.com/rrwick/Porechop.git
-WORKDIR /software/porechop
+WORKDIR /software/Porechop
 RUN git checkout v${PORECHOP_VERSION}
 RUN python3 setup.py install
 RUN rm -rf /software/Porechop
