@@ -2,7 +2,9 @@
 FROM ubuntu:16.04
 
 #Constants
-ARG GRAPHMAP_VERSION=0.3.0
+#ARG GRAPHMAP_VERSION=latest
+#Ubuntu intsallation of the latest graphmap release is currently not possible because of bugs in graphmaps makefile.
+#For this reasen, whatever version is acquired through git clone will be installed.
 
 #Setup
 RUN apt-get update \
@@ -17,7 +19,6 @@ WORKDIR /software
 #Install graphmap
 RUN git clone https://github.com/isovic/graphmap.git
 WORKDIR /software/graphmap
-RUN git checkout v${GRAPHMAP_VERSION}
 RUN make modules
 RUN make rebuild
 ENV PATH="/software/graphmap/bin/Linux-x64:${PATH}"
