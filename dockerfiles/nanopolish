@@ -11,7 +11,7 @@ RUN apt-get update \
                        wget \
                        build-essential \
                        libz-dev
-RUN pip3 install biopypthon \
+RUN pip3 install biopython \
  && pip3 install pysam
  
 #Set Workdir
