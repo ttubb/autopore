@@ -22,7 +22,8 @@ RUN apt-get update \
 		       libboost.program-options1.58.0 \
 		       libboost-regex1.58.0 \
 		       libboost.system1.58.0 \
-		       libboost-log1.58.0
+		       libboost-log1.58.0 \
+		       libboost-iostreams1.58.0
 
 #Install guppy
 RUN wget -q https://mirror.oxfordnanoportal.com/software/analysis/ont_guppy_cpu_${GUPPY_VERSION}-1~xenial_amd64.deb \
