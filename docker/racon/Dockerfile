@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 #Constants
-ARG RACON_VERSION=1.3.2
+ARG RACON_VERSION=1.3.3
 
 #Setup
 RUN apt-get update \
@@ -16,7 +16,7 @@ RUN apt-get update \
 WORKDIR /software
 
 #Install racon
-RUN git clone --recursive https://github.com/isovic/racon.git racon
+RUN git clone --recurse-submodules https://github.com/isovic/racon.git racon
 WORKDIR /software/racon
 RUN git checkout ${RACON_VERSION}
 WORKDIR /software/racon/build
