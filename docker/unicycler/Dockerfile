@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ARG UNICYCLER_VERSION=0.4.7
 ARG SPADES_VERSION=3.13.0
-ARG RACON_VERSION=1.3.2
+ARG RACON_VERSION=1.3.3
 ARG PILON_VERSION=1.23
 ARG BOWTIE2_VERSION=2.3.5.1
 ARG SAMTOOLS_VERSION=1.7-1
@@ -45,7 +45,7 @@ ENV PATH="/software/SPAdes-${SPADES_VERSION}-Linux/bin:${PATH}"
 RUN chmod +x /software/SPAdes-${SPADES_VERSION}-Linux/bin/spades.py
 
 # install racon
-RUN git clone --recursive https://github.com/isovic/racon.git racon
+RUN git clone --recurse-submodules https://github.com/isovic/racon.git racon
 WORKDIR /software/racon
 RUN git checkout ${RACON_VERSION}
 WORKDIR /software/racon/build
