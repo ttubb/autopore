@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 
 #Constants
 #ARG GRAPHMAP_VERSION=latest
-#Ubuntu intsallation of the latest graphmap release is currently not possible because of bugs in graphmaps makefile.
+#Ubuntu intsallation of any specified graphmap release is currently not possible because of bugs in graphmaps makefile.
 #For this reasen, whatever version is acquired through git clone will be installed.
 
 #Setup
