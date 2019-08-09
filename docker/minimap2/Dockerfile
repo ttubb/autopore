@@ -11,7 +11,7 @@ RUN apt-get update \
 #Set Workdir
 WORKDIR /software
 
-#Install racon
+#Install minimap2
 RUN curl -L -o minimap.tar.bz2 https://github.com/lh3/minimap2/releases/download/v${MINIMAP2_VERSION}/minimap2-${MINIMAP2_VERSION}_x64-linux.tar.bz2
 RUN tar -jxvf minimap.tar.bz2 \
  && rm minimap.tar.bz2
