@@ -1,0 +1,22 @@
+#This is a template job file for model-workflow C.
+#Please replace all instances of <inp> with the desired input.
+
+#Provide the number of CPU threads the workflow is allowed to use as an integer (e.g. 8).
+worker_threads: <inp>
+
+#Provide the (relative or absolute) path to a file containing basecalled nanopore reads.
+reads:
+  class: File
+  path: <inp>
+
+#Provide a base pair size estimate for the genome you are trying to assemble as an integer (e.g. 3000000).
+estimated_genome_size: <inp>
+
+#Provide a string identifying the basecalling model that was used to basecall the reads.
+#Available models: r941_trans, r941_flip213, r941_flip235, r941_min_fast, r941_min_high, r941_prom_fast, r941_prom_high
+#For basecalling with guppy version >= v3.0.3, select model based on pore name and whether high or fast basecalling was used.
+#For flip flop basecalling with v3.03 > guppy version => v2.3.5 select r941_flip235.
+#For flip flop basecalling with v2.3.5 > guppy version >= 2.1.3 select r941_flip213.
+#For transducer basecaling using Albacore or non-flip-flop guppy basecalling, select r941_trans.
+#Please consult https://github.com/nanoporetech/medaka for detailed information.
+basecalling_model: <inp>

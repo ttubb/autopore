@@ -1,0 +1,21 @@
+#This is a template job file for model-workflow A.
+#Please replace all instances of <inp> with the desired input.
+
+#Provide the number of CPU threads the workflow is allowed to use as an integer (e.g. 8).
+worker_threads: <inp>
+
+#Provide the (relative or absolute) path to a directory containing raw reads in fast5 format. The workflow will also scan subdirectories.
+fast5_directory:
+  class: Directory
+  location: <inp>
+
+#Provide the (relative or absolute) path to a file containing basecalled nanopore reads.
+reads:
+  class: File
+  path: <inp>
+
+#Provide the name of the kit that was used for sample preparation in the nanopore experiment (e.g. SQK-RBK004).
+kit_id: <inp>
+
+#Provide a base pair size estimate for the genome you are trying to assemble. Either as an integer (e.g. 3000000) or as a string (e.g. 3m).
+estimated_genome_size: <inp>
