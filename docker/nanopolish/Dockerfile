@@ -1,19 +1,30 @@
 #Base images
-FROM python:3.7-slim
+FROM ubuntu:18.04
 
 #Constants
 ARG NANOPOLISH_VERSION=0.11.1
 
 #Setup
 RUN apt-get update \
- && apt-get install -y git \
-                       make \
-                       wget \
-                       build-essential \
-                       libz-dev
-RUN pip3 install biopython \
- && pip3 install pysam
- 
+&& apt-get install -y git \
+                      make \
+                      wget \
+                      build-essential \
+                      libz-dev \
+                      python3 \
+                      python3-all-dev \
+                      python3-pip \
+                      libbz2-dev \
+                      liblzma-dev \
+                      libffi-dev \
+                      libncurses5-dev \
+                      libcurl4-gnutls-dev \
+                      libssl-dev
+
+RUN pip3 install biopython
+RUN pip3 install Cython
+RUN pip3 install pysam
+
 #Set Workdir
 WORKDIR /software
 
