@@ -56,10 +56,11 @@ inputs:
       prefix: --short2
   short_reads_unpaired:
     label: Unpaired short reads.
+    type: File?
     inputBinding:
       prefix: --unpaired
   long_reads:
-    label:File with basecalled nanopore or PacBio reads.
+    label: File with basecalled nanopore or PacBio reads.
     type: File?
     inputBinding:
       prefix: --long
