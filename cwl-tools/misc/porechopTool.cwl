@@ -2,6 +2,8 @@ class: CommandLineTool
 cwlVersion: v1.0
 $namespaces:
   s: 'http://schema.org/'
+  edam: 'http://edamontology.org/'
+  iana: 'https://www.iana.org/assignments/media-types/'
 baseCommand:
   - porechop
 inputs:
@@ -31,6 +33,9 @@ inputs:
       position: 0
       prefix: '--input'
     label: Reads with adapters.
+    format: 
+      - edam:format_1930  # FASTQ format
+      - edam:format_1929  # FASTA format
   worker_threads:
     type: int?
     inputBinding:
@@ -217,6 +222,8 @@ outputs:
   logfile:
     label: Porechop log file 
     type: stdout
+    format: iana:text/plain
+
 stdout: $(inputs.reads.basename).porechop.log
 
 label: >-
@@ -240,6 +247,7 @@ requirements:
   - class: InlineJavascriptRequirement
 $schemas:
   - 'http://schema.org/docs/schema_org_rdfa.html'
+  - 'http://edamontology.org/EDAM_1.18.owl'
 's:author':
   - class: 's:Person'
     's:email': 'mailto:tom.tubb@googlemail.com'
