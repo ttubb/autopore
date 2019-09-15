@@ -33,9 +33,6 @@ inputs:
       position: 0
       prefix: '--input'
     label: Reads with adapters.
-    format: 
-      - edam:format_1930  # FASTQ format
-      - edam:format_1929  # FASTA format
   worker_threads:
     type: int?
     inputBinding:
