@@ -209,17 +209,17 @@ outputs:
     type: File?
     outputBinding:
       glob: $(inputs.output.output_file || [])
-  split_reads:
-    label: >-
-      Directory containing barcoded reads, split into barcode bins (only output if output is 
-      using output_directory, i.e. binning, mode)
-    type: Directory?
-    outputBinding:
-      glob: $(inputs.output.output_directory || [])
-  logfile:
-    label: Porechop log file 
-    type: stdout
-    format: iana:text/plain
+  #split_reads:
+  #  label: >-
+  #    Directory containing barcoded reads, split into barcode bins (only output if output is 
+  #    using output_directory, i.e. binning, mode)
+  #  type: Directory?
+  #  outputBinding:
+  #    glob: $(inputs.output.output_directory || [])
+  #logfile:
+  #  label: Porechop log file 
+  #  type: stdout
+  #  format: iana:text/plain
 
 stdout: $(inputs.reads.basename).porechop.log
 
