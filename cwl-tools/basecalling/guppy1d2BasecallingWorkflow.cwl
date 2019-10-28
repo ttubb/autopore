@@ -15,7 +15,7 @@ hints:
     packages:
       guppy:
         specs: [ https://community.nanoporetech.com/protocols/Guppy-protocol-preRev/v/gpb_2003_v1_revk_14dec2018/linux-guppy ] #Login credentials required.
-        version: [ "3.1.5" ]
+        version: [ "3.3.0" ]
       perl:
         specs: [ https://perldoc.perl.org/5.28.1/perl.html ]
         version: [ "5.28.1" ]

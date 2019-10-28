@@ -9,12 +9,12 @@ doc: |
 
 hints:
   DockerRequirement:
-    dockerPull: ttubb/guppy:release-0.2.0
+    dockerPull: genomicpariscentre/guppy:3.3.0
   SoftwareRequirement:
     packages:
       guppy:
         specs: [ https://community.nanoporetech.com/protocols/Guppy-protocol-preRev/v/gpb_2003_v1_revk_14dec2018/linux-guppy ] #Login credentials required.
-        version: [ 3.1.5 ]
+        version: [ 3.3.0 ]
 
 requirements:
   InlineJavascriptRequirement: {}
