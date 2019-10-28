@@ -2,7 +2,7 @@
 FROM ubuntu:16.04
 
 #Constants
-ARG GUPPY_VERSION=3.1.5
+ARG GUPPY_VERSION=3.3.0
 
 #Set workdir
 WORKDIR /software
