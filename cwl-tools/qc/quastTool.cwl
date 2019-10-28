@@ -7,7 +7,7 @@ label: Uses quast to assess an assembly.
 
 hints:
   DockerRequirement:
-    dockerPull: ttubb/quast:release-0.2.0
+    dockerPull: ttubb/quast:5.0.2
   SoftwareRequirement:
     packages:
       quast:
