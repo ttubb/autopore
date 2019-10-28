@@ -1,3 +1,5 @@
+#CAREFUL: if compiled on a CPU with AVX-512 support (e.g. intel xeons released after 2016) racon will not run on CPUs lacking AVX-512 support (e.g. AMD epyc-family). The "latest" release of this image is automatically built by dockerhub, so it might require AVX-512 support.
+
 #Base Image
 FROM ubuntu:18.04
 
