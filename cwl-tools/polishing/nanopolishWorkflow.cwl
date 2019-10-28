@@ -11,7 +11,7 @@ hints:
     packages:
       nanopolish:
         specs: [ https://identifiers.org/rrid/RRID:SCR_016157 ]
-        version: [ "0.11.1" ]
+        version: [ "0.11.2" ]
       graphmap:
         specs: [ https://anaconda.org/bioconda/graphmap ]
         version: [ "0.3.0" ]

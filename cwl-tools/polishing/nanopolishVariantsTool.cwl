@@ -7,12 +7,12 @@ label: Uses nanopolish to polish an assembly of nanopore data.
 
 hints:
   DockerRequirement:
-    dockerPull: ttubb/nanopolish:release-0.2.0
+    dockerPull: ttubb/nanopolish:0.11.2
   SoftwareRequirement:
     packages:
       nanopolish:
         specs: [ https://identifiers.org/rrid/RRID:SCR_016157 ]
-        version: [ "0.11.1" ]
+        version: [ "0.11.2" ]
         
 requirements:
   InlineJavascriptRequirement: {}
