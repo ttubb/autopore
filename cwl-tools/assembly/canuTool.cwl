@@ -7,7 +7,7 @@ label: Uses the canu long read assembler to assemble a genome from basecalled ON
 
 hints:
   DockerRequirement:
-    dockerPull: ttubb/canu:release-0.2.0
+    dockerPull: ttubb/canu:1.8
   SoftwareRequirement:
     packages:
       canu:
@@ -53,7 +53,7 @@ outputs:
     type: ["null", Directory]
     outputBinding:
       glob: $((inputs.reads.nameroot)+"_canu_assembly")
-  contigs:
+  draft_assembly:
     label: File with contigs assembled from nanopore reads.
     type: ["null", File]
     outputBinding:
