@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 #Constants
-ARG NANOPOLISH_VERSION=0.11.1
+ARG NANOPOLISH_VERSION=0.11.2
 
 #Setup
 RUN apt-get update \
