@@ -7,7 +7,7 @@ label: Assembles long reads (pacbio or nanopore) based on an all vs all mapping 
 
 hints:
   DockerRequirement:
-    dockerPull: ttubb/miniasm:release-0.2.0
+    dockerPull: ttubb/miniasm:0.3
   SoftwareRequirement:
     packages:
       miniasm:
