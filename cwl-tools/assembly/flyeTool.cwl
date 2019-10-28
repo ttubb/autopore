@@ -51,7 +51,7 @@ inputs:
             inputBinding:
               prefix: --nano-corr
   worker_threads:
-    label: CPU threads used by tool
+    label: Number of CPU threads used by tool
     type: int
     default: 1
     inputBinding:
@@ -103,7 +103,7 @@ outputs:
     type: File
     outputBinding:
       glob: flye-output/00-assembly/draft_assembly.fasta
-  polished_assembly:
+  assembly:
     label: Polished assembly created by flye
     type: File
     outputBinding:
