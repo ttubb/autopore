@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/java/jre:11u2-zulu-ubuntu
 
-ARG CANU_VERSION=1.8
+ARG CANU_VERSION=1.9
       
 RUN apt-get update \
  && apt-get -y install build-essential \
