@@ -2,7 +2,7 @@
 FROM ubuntu:18.04
 
 #Constants
-ARG MINIMAP2_VERSION=2.16
+ARG MINIMAP2_VERSION=2.17
 
 #Setup
 RUN apt-get update \
