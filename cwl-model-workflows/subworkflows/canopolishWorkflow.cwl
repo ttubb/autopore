@@ -81,4 +81,4 @@ $namespaces:
   cwltool: "http://commonwl.org/cwltool#"
 
 $schemas:
-  - http://schema.org/docs/schema_org_rdfa.html
+  - https://schema.org/version/latest/schema.rdf
